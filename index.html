@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Recommender System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<style>
+    body {
+        /* background-image: url('Bg.jpeg'); */
+        background-size: cover; /* Adjust as needed */
+        background-position: center; /* Adjust as needed */
+    }
+</style>
+<body>
+    <header class="header">
+        <h1>Wardrobe whirl</h1>
+    </header>
+
+    <div class="upload-container">
+        <input type="file" id="fileInput" class="file-input">
+        <button id="uploadButton" class="upload-button">Upload</button>
+    </div>
+
+    <div class="card-container">
+        <div class="card" id="card">
+            <button class="reject-button" id="rejectButton"><i class="fas fa-times"></i></button>
+            <img id="cardImage" alt="">
+            <button class="wishlist-button" id="wishlistButton"><i class="fas fa-heart"></i></button>
+            <button class="next-button" id="nextButton"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+<h1>Suggested Items</h1>
+    <div class="suggested-container" id="suggestedContainer">
+        <!-- Suggested product cards will be dynamically added here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
